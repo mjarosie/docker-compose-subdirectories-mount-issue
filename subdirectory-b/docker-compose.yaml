@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  db-b:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - ./some-data-dir:/some-data-dir
